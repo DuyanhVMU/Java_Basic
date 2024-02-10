@@ -1,0 +1,12 @@
+
+public class Data {
+	private String name;
+	private int ma;
+	private float dtb;
+	public Data(String namesv, int masv, int diem) {
+		this.name=namesv;
+		this.ma=masv;
+		this.dtb=diem;
+	}
+	
+}

@@ -1,0 +1,15 @@
+
+public class LinkedList {
+	private Node pHead;
+	private Node pHTail;
+	private int spt;
+	
+	public LinkedList() {
+		this.spt=0;
+		this.pHead=null;
+		this.pHTail=null;
+	}
+	public boolean EmptyList() {
+	    return this.spt == 0;
+	}
+}

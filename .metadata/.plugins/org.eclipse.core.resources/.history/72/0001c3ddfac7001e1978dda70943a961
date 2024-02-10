@@ -1,0 +1,10 @@
+
+public class Node {
+	private Data infor;
+	private Node link;
+	
+	public Node(Data infor) {
+		this.infor= infor;
+		this.link=null;
+	}
+}

@@ -1,0 +1,24 @@
+
+public class Data {
+	private String name;
+	private int ma;
+	private float dtb;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getMa() {
+		return ma;
+	}
+	public void setMa(int ma) {
+		this.ma = ma;
+	}
+	public float getDtb() {
+		return dtb;
+	}
+	public void setDtb(float dtb) {
+		this.dtb = dtb;
+	}
+}

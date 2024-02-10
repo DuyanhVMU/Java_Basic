@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class vidu {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Nhap n: ");
+			int n=sc.nextInt();
+			System.out.println("Gia tri nhap vao la: "+n);
+			System.out.println("Ket thuc chuong trinh");
+	}
+}

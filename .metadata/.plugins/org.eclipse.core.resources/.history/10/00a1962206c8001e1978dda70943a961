@@ -1,0 +1,69 @@
+
+public class LinkedList {
+	private Node pHead;
+	private Node pTail;
+	private int spt;
+	
+	public LinkedList() {
+		this.spt=0;
+		this.pHead=null;
+		this.pTail=null;
+	}
+	public boolean EmptyList() {
+	    return this.spt == 0;
+	}
+	public void Insert_Head(String namesv, int masv, int diem) {
+		Node newNode=new Node(namesv, masv, diem);
+		if(this.EmptyList()) {
+			this.pHead=newNode;
+			this.pTail=newNode;
+		}
+		else {
+			newNode.link=this.pHead;
+			this.pHead=newNode;
+		}
+		this.spt++;
+	}
+	
+	public void Insert_Tail(String namesv, int masv, int diem) {
+		Node newNode=new Node(namesv, masv, diem);
+		if(this.EmptyList()) {
+			this.pHead=newNode;
+			this.pTail=newNode;
+		}
+		else {
+			this.pTail.link=newNode;
+			this.pTail=newNode;
+		}
+		this.spt++;
+	}
+	
+	public void Insert_After(int key,String namesv, int masv, int diem) {
+		Node newNode=new Node(namesv, masv, diem);
+		Node current= this.pHead;
+		while(current!=null && current.infor.ma!=key) {
+			current=current.link;
+		}
+		if(current==null){
+			return;
+		}
+		else {
+			newNode.link=current.link;
+			current.link=newNode;
+			if(current==this.pTail) {
+				this.pTail=newNode;
+			}
+			this.spt++;
+		}
+		
+	}
+	
+	public void processList() {
+		System.out.println("Thong tin sinh vien: ");
+		Node current= this.pHead;
+		while(current!=null) {
+			current.printData();
+			current=current.link;
+		}
+	}
+}

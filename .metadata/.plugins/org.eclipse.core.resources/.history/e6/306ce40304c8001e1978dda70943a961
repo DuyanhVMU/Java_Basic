@@ -1,0 +1,35 @@
+
+public class LinkedList {
+	private Node pHead;
+	private Node pTail;
+	private int spt;
+	
+	public LinkedList() {
+		this.spt=0;
+		this.pHead=null;
+		this.pTail=null;
+	}
+	public boolean EmptyList() {
+	    return this.spt == 0;
+	}
+	public void Insert_Head(String namesv, int masv, int diem) {
+		Node newNode=new Node(namesv, masv, diem);
+		if(this.EmptyList()) {
+			this.pHead=newNode;
+			this.pTail=newNode;
+		}
+		else {
+			newNode.link=this.pHead;
+			this.pHead=newNode;
+		}
+		this.spt++;
+	}
+	public void processList() {
+		System.out.println("Thong tin sinh vien: ");
+		Node current= this.pHead;
+		while(current!=null) {
+			current.printData();
+			current=current.link;
+		}
+	}
+}

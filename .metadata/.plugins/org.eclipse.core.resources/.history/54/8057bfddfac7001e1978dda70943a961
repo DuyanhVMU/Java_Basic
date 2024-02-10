@@ -1,0 +1,11 @@
+
+public class Main {
+	public static void main(String[] args) {
+		LinkedList lk=new LinkedList();
+		if (lk.EmptyList()) {
+		    System.out.println("The linked list is empty.");
+		} else {
+		    System.out.println("The linked list is not empty.");
+		}
+	}
+}

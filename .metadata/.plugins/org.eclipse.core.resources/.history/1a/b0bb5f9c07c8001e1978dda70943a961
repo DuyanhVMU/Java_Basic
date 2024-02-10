@@ -1,0 +1,11 @@
+
+public class Main {
+	public static void main(String[] args) {
+		LinkedList lk=new LinkedList();
+		lk.Insert_Tail("duyanh", 1, 1);
+		lk.Insert_Tail("dy", 2, 2);
+		lk.Insert_After(2, "dyb", 3, 3);
+		lk.Insert_Tail("dya", 4, 4);
+		lk.processList();
+	}
+}
